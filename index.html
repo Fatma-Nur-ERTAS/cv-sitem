@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fatma Nur Ertaş | Kişisel CV</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; display: flex; height: 100vh; background: #f4f4f4; }
+    .sidebar {
+      width: 250px;
+      background: #2e6da4;
+      color: white;
+      padding: 20px;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .sidebar img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 15px;
+      border: 2px solid white;
+    }
+    .menu a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin: 5px 0;
+      border-radius: 5px;
+    }
+    .menu a:hover {
+      background-color: #1f4e75;
+    }
+    .content {
+      flex: 1;
+      padding: 30px;
+      overflow-y: auto;
+    }
+    .section {
+      display: none;
+    }
+    .section.active {
+      display: block;
+    }
+    h1 {
+      color: #2e6da4;
+      margin-bottom: 20px;
+    }
+    a {
+      color: #2e6da4;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sol Menü -->
+  <div class="sidebar">
+    <img src="profil.jpg" alt="Fatma Nur Ertaş" />
+    <h2>Fatma Nur Ertaş</h2>
+    <div class="menu">
+      <a href="#" onclick="showSection('hakkimda')">Hakkımda</a>
+      <a href="#" onclick="showSection('iletisim')">İletişim</a>
+      <a href="#" onclick="showSection('mezuniyet')">Mezuniyet ve Staj</a>
+      <a href="#" onclick="showSection('projeler')">Projeler</a>
+      <a href="#" onclick="showSection('yetenekler')">Yeteneklerim</a>
+    </div>
+  </div>
+
+  <!-- İçerik -->
+  <div class="content">
+    <div id="hakkimda" class="section active">
+      <h1>Hakkımda</h1>
+      <p>
+         Merhaba ben Fatma Nur Ertaş , Kastamonu Üniversite'si Bilgisayar Programcılığı mezunuyum. Yazılım dünyasında özellikle masaüstü uygulamaları ve görsel programlama konularına ilgi duyuyorum.<br />
+        Öğrencilik sürecimde birkaç masaüstü uygulaması geliştirdim. Bunlardan biri olan Kişisel Notlar Uygulaması, veritabanı ile entegre çalışan basit ve işlevsel bir araç olarak dikkat çekiyor. <br />
+        Veritabanı ile çalışmak bana keyif veriyor. Tasarım ve kullanıcı arayüzü geliştirme (frontend) alanı ise en çok yoğunlaştığım ve kendimi en rahat hissettiğim alan. <br />
+        Backend tarafı zaman zaman karmaşık gelse de, odaklandığımda bu alanda da başarılı olabileceğime inanıyorum. <br />
+        Genel olarak, yazılım geliştirme sürecinde en çok arayüz tasarımı, kullanıcı deneyimi ve işlevsel uygulamalar üretmekten keyif alıyorum. Yeni şeyler öğrenmeye açık, üretmeye hevesli bir geliştirici olarak yoluma devam ediyorum.  <br />
+        Kastamonu Üniversite'sinde eğitim görürken aynı zamanda Kastamonu Americanca Kültür eğitim kurumlarından ingilizce eğitim aldım ve B1 ingilizce seviyesinde mezun oldum.  <br />
+        Boş zamanlarımda genellikle arkadaşlarımla vakit geçirmeyi severim arta kalan zamanlarımda dizi , film izlemeyi  ve kitap okumayı tercih ederim.  <br /> 
+        Grup çalışmalarında oldukça başarılıyımdır. Disiplinli , dakik ve dikkatli olmam sayesinde edindiğim sorumluluk ve projelerde oldukça başarılı sonuçlar elde ettim.
+
+      </p>
+    </div>
+
+    <div id="iletisim" class="section">
+      <h1>İletişim</h1>
+      <p><strong>Email:</strong> <a href="mailto:fatmanurertas540@mail.com">fatmanurertas540@mail.com</a></p><br />
+      <p><strong>Telefon:</strong> 0536 545 30 76</p><br />
+      <p><strong>Adres:</strong> Karaman/Sarıveliler</p><br />
+      <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/fatma-nur-erta%C5%9F-24331a2a5" target="_blank" rel="noopener noreferrer">linkedin.com/in/fatma-nur-ertaş</a>
+      </p><br />
+      <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/Fatma-Nur-ERTAS" target="_blank" rel="noopener noreferrer">github.com/Fatma-Nur-ERTAS</a>
+      </p><br />
+    </div>
+
+    <div id="mezuniyet" class="section">
+      <h1>Mezuniyet ve Staj</h1>
+      <p><strong>Üniversite:</strong> Kastamonu Üniversitesi - Bilgisayar Programcılığı Mezunu</p><br />
+      <p><strong>Staj:</strong> Rekt Yazılım Tasarım Şirketi’nde yazılım geliştirici olarak 30 iş günü zorunlu yaz stajı yaptım.</p><br />
+    </div>
+
+    <div id="projeler" class="section">
+      <h1>Projeler</h1>
+      <p><strong>Kişisel Notlar Uygulaması:</strong> Python + Tkinter kullanılarak geliştirilmiş masaüstü uygulaması.</p>
+      <a href="https://github.com/Fatma-Nur-ERTAS/kisisel-notlar-uygulamas-" target="_blank">Projeyi Gör</a>
+      <br /><br />
+      <p><strong>Tic Tac Toe Oyunu:</strong> JavaScript ile oluşturulmuş klasik XOX oyunu.</p>
+      <a href="https://github.com/Fatma-Nur-ERTAS/tic-tac-toe" target="_blank">Projeyi Gör</a>
+    </div>
+
+    <div id="yetenekler" class="section">
+      <h1>Yeteneklerim</h1>
+      <ul>
+        <li>Python</li>
+        <li>PHP</li>
+        <li>HTML &amp; CSS</li>
+        <li>Veritabanı Yönetimi (SQL)</li>
+        <li>Frontend Tasarım ve UI/UX</li>
+        <li>C# & .Net (Masaüstü Uygulama Geliştirme)</li>
+        <li>WordPress</li>
+        <li>Adobe ve Office uygulamaları</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
